@@ -24,7 +24,13 @@ int main()
 
         getline(stream, tid, ',');
         getline(stream, items);
-
+        
+        if (items.size() >= 2 &&
+            items.front() == '"' &&
+            items.back() == '"')
+        {
+            items = items.substr(1, items.size() - 2);
+        }
         stringstream itemStream(items);
 
         string item;
