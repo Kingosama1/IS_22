@@ -22,4 +22,3 @@ def load_transactions_from_excel():
             transaction_ids.append(tid)
     return transactions, transaction_ids
 
-transactions, transaction_ids = load_transactions_from_excel()
